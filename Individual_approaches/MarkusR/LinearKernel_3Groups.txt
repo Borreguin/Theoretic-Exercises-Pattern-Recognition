@@ -1,0 +1,16 @@
+EXERCISE 2: SUPPORT VECTOR MACHINES
+
+trying to load 1.2.Tr_train.csv from pickle
+loaded 1.2.Tr_train.csv
+trying to load 1.2.Tr_test.csv from pickle
+loaded 1.2.Tr_test.csv
+learning from 26999 data points
+classifying 15001 data points
+cross-validating kernel with 3 groups
+
+
+LINEAR KERNEL
+
+cross-validating...
+C-param 1 gives accuracy 0.792918280439
+C-param 100 gives accuracy 0.790733018089

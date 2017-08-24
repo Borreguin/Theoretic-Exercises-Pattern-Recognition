@@ -1,0 +1,21 @@
+New files:
+ 	*img_svg_splitting_v2.py: variation of the original script, 
+				 the images are not scaled to a fixed size (100x100)
+				 use a filter called:  Sobel operator  
+				 the result will be stored in a folder words2
+	
+		use example: python img_svg_splitting_v2.py 300.jpg 300.svg
+
+ 	*statistics.py: give some statistics about the images inside of the @folder: 
+	
+		use example: python statistics.py [@folder]
+			     python statistics.py ./words2	
+
+ 	*normalize.py: makes the normalization of the images inside of @folder
+		       the resulting images are in the folder normalize
+
+		use example: python normalize.py [@folder]
+			     python normalize.py ./words2
+
+	*sc.py: is the library for seam carving	
+	   

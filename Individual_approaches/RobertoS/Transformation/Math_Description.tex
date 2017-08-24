@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{listings}
+%\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+
+
+
+\usepackage{listings}
+
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+%backgroundcolor=\color{gray97},
+%rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+%
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C}
+{language=C,
+}
+
+
+\usepackage{hyperref}
+
+
+
+
+
+\title{Series 2a. Mean - Variance Feature - extraction  \\ Pattern Recognition }	
+\author{Roberto Sanchez \\ Univesité de Fribourg}
+\newtheorem{theorem}{Theorem}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\maketitle 
+\section{Description}
+
+
+\subsection{Feature Extraction} 
+
+
+The script (1.2.Transf.py) reduce the vector of 28 x 28 to a smaller vector. The script \textbf{1.2.Transf.py} reduces the size vector to 28 x 2 values. The original vector is split in 28 groups where the colors values (0-255 gray scale) are not important anymore, but instead the position where each pixel has a value greater than the parameter opacity:\\
+
+\begin{equation}
+\displaystyle  \mu_{i} = \frac{1}{N}\sum_{i=0}^{28} X_{i|v > opacity}
+\end{equation} 
+ 
+
+N is number of pixels that have values of the gray scale greater than \textit{opacity} parameter. 
+
+In addition, the variance is also calculate: \\
+
+\begin{equation}
+\displaystyle  \sigma_{i} = \frac{1}{N}\left[ \sum_{i=0}^{28} (X_{i|v > opacity} - \mu)^2 \right] ^{1/2}
+\end{equation}
+
+The final structure of the vector is as follow:
+
+\begin{itemize}
+	\item[x[0]]: Contains the digit handwriting data label. 
+	\item[n]: Is number of 28 formed groups, therefore $n = [0... 27]$  	
+	\item[x[2n+1]]: Contains the mean position of the pixels inside of the group of 28.
+	\item[x[2n+2]]: Contains the rest of mean position and the variance: $\mu - \sigma $ 
+\end{itemize}
+
+
+
+\end{document}
+
+\begin{lstlisting}[frame=single]
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+int main ()
+{
+	pid_t child_pid;
+	printf ("BEGIN: \nThe current process has PID: %d\n", (int) getpid ());
+	child_pid = fork (); /*it creates a father and child process*/
+	if (child_pid != 0) {
+		printf (" This is the parent process, with ID: %d\n",(int) getpid ());
+		
+		printf (" This is the child's ID: %d\n",(int) child_pid);
+		printf (" PING \n");
+	}
+	else{
+		printf ("\n This is the child process, with ID: %d\n", (int) getpid ());
+		printf (" pong \n");
+	}
+		
+	return 1;
+}
+
+
+\end{lstlisting}

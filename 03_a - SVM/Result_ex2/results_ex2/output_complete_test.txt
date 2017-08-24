@@ -1,0 +1,109 @@
+EXERCISE 2: SUPPORT VECTOR MACHINES
+
+trying to load 1.2.Tr_train.csv from pickle
+loaded 1.2.Tr_train.csv
+trying to load 1.2.Tr_test.csv from pickle
+loaded 1.2.Tr_test.csv
+learning from 26999 data points
+classifying 15001 data points
+cross-validating kernel with 5 groups
+
+
+POLYNOMIAL KERNEL
+
+cross-validating...
+C-param 0.1 and degree param 1 give accuracy 0.75464835692
+C-param 0.1 and degree param 2 give accuracy 0.844568330067
+C-param 0.1 and degree param 4 give accuracy 0.827836205551
+C-param 1 and degree param 1 give accuracy 0.781649332617
+C-param 1 and degree param 2 give accuracy 0.829141811692
+C-param 1 and degree param 4 give accuracy 0.827836205551
+C-param 10 and degree param 1 give accuracy 0.788186620008
+C-param 10 and degree param 2 give accuracy 0.823067506555
+C-param 10 and degree param 4 give accuracy 0.827836205551
+
+best result:
+C-param 0.1 and degree param 2 give accuracy 0.844568330067
+best parameters applied to test set give accuracy of 0.890340643957
+
+
+RADIAL BASIS FUNCTION KERNEL
+
+cross-validating...
+C-param 1 and gamma param 0.1 give accuracy 0.230295332174
+C-param 1 and gamma param 10 give accuracy 0.109985551457
+C-param 1 and gamma param 1000 give accuracy 0.10983739645
+C-param 1 and gamma param 100000 give accuracy 0.10983739645
+C-param 10 and gamma param 0.1 give accuracy 0.256314889407
+C-param 10 and gamma param 10 give accuracy 0.109985551457
+C-param 10 and gamma param 1000 give accuracy 0.10983739645
+C-param 10 and gamma param 100000 give accuracy 0.10983739645
+C-param 10000 and gamma param 0.1 give accuracy 0.256314889407
+C-param 10000 and gamma param 10 give accuracy 0.109985551457
+C-param 10000 and gamma param 1000 give accuracy 0.10983739645
+C-param 10000 and gamma param 100000 give accuracy 0.10983739645
+
+best result:
+C-param 10 and gamma param 0.1 give accuracy 0.256314889407
+best parameters applied to test set give accuracy of 0.369975334978
+
+
+SIGMOID KERNEL
+
+cross-validating...
+C-param 1, gamma param 1 and coef0 param -1000  give accuracy 0.712878290833
+C-param 1, gamma param 1 and coef0 param -10  give accuracy 0.826984319833
+C-param 1, gamma param 1 and coef0 param 0  give accuracy 0.827549155654
+C-param 1, gamma param 1 and coef0 param 10  give accuracy 0.827632492416
+C-param 1, gamma param 1 and coef0 param 1000  give accuracy 0.834401263433
+C-param 1, gamma param 100 and coef0 param -1000  give accuracy 0.826947281081
+C-param 1, gamma param 100 and coef0 param -10  give accuracy 0.827484338267
+C-param 1, gamma param 100 and coef0 param 0  give accuracy 0.82752137659
+C-param 1, gamma param 100 and coef0 param 10  give accuracy 0.827502858071
+C-param 1, gamma param 100 and coef0 param 1000  give accuracy 0.827613972612
+C-param 1, gamma param 10000 and coef0 param -1000  give accuracy 0.82752137659
+C-param 1, gamma param 10000 and coef0 param -10  give accuracy 0.827521377018
+C-param 1, gamma param 10000 and coef0 param 0  give accuracy 0.827576934717
+C-param 1, gamma param 10000 and coef0 param 10  give accuracy 0.827512117759
+C-param 1, gamma param 10000 and coef0 param 1000  give accuracy 0.827484337409
+
+
+
+EXERCISE 2: SUPPORT VECTOR MACHINES
+
+trying to load 1.2.Tr_train.csv from pickle
+loaded 1.2.Tr_train.csv
+trying to load 1.2.Tr_test.csv from pickle
+loaded 1.2.Tr_test.csv
+learning from 26999 data points
+classifying 15001 data points
+cross-validating kernel with 3 groups
+
+
+LINEAR KERNEL
+
+cross-validating...
+C-param 1 gives accuracy 0.792918280439
+C-param 100 gives accuracy 0.790733018089
+
+
+
+EXERCISE 2: SUPPORT VECTOR MACHINES
+
+trying to load 1.2.Tr_train.csv from pickle
+loaded 1.2.Tr_train.csv
+trying to load 1.2.Tr_test.csv from pickle
+loaded 1.2.Tr_test.csv
+learning from 26999 data points
+classifying 15001 data points
+cross-validating kernel with 7 groups
+
+
+LINEAR KERNEL
+
+cross-validating...
+C-param 1 gives accuracy 0.776213933849
+C-param 100 gives accuracy 0.767966714817
+
+
+

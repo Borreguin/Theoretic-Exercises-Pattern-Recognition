@@ -1,0 +1,37 @@
+EXERCISE 3: MULTILAYER PERCEPTRON 
+
+trying to load train_short.csv from pickle
+loaded train_short.csv
+trying to load test_short.csv from pickle
+loaded test_short.csv
+learning from 5000 data points
+classifying 2000 data points
+cross-validating kernel with 10 groups
+
+
+MULTILAYER PERCEPTRON
+
+cross-validating...
+
+784 n_h_neurons, lea_rate  0.01, 2 it, r_seed 243219 , acc,  0.7362
+784 n_h_neurons, lea_rate  0.01, 5 it, r_seed 243219 , acc,  0.7328
+784 n_h_neurons, lea_rate  0.01, 10 it, r_seed 243219 , acc,  0.7328
+784 n_h_neurons, lea_rate  0.1, 2 it, r_seed 243219 , acc,  0.2632
+784 n_h_neurons, lea_rate  0.1, 5 it, r_seed 243219 , acc,  0.2688
+784 n_h_neurons, lea_rate  0.1, 10 it, r_seed 243219 , acc,  0.2688
+784 n_h_neurons, lea_rate  0.5, 2 it, r_seed 243219 , acc,  0.1116
+784 n_h_neurons, lea_rate  0.5, 5 it, r_seed 243219 , acc,  0.109
+784 n_h_neurons, lea_rate  0.5, 10 it, r_seed 243219 , acc,  0.109
+784 n_h_neurons, lea_rate  0.01, 2 it, r_seed 243219 , acc,  0.6836
+784 n_h_neurons, lea_rate  0.01, 5 it, r_seed 243219 , acc,  0.6944
+784 n_h_neurons, lea_rate  0.01, 10 it, r_seed 243219 , acc,  0.6944
+784 n_h_neurons, lea_rate  0.1, 2 it, r_seed 243219 , acc,  0.2948
+784 n_h_neurons, lea_rate  0.1, 5 it, r_seed 243219 , acc,  0.316
+784 n_h_neurons, lea_rate  0.1, 10 it, r_seed 243219 , acc,  0.2934
+784 n_h_neurons, lea_rate  0.5, 2 it, r_seed 243219 , acc,  0.109
+784 n_h_neurons, lea_rate  0.5, 5 it, r_seed 243219 , acc,  0.109
+784 n_h_neurons, lea_rate  0.5, 10 it, r_seed 243219 , acc,  0.109
+784 n_h_neurons, lea_rate  0.01, 2 it, r_seed 243219 , acc,  0.6366
+784 n_h_neurons, lea_rate  0.01, 5 it, r_seed 243219 , acc,  0.6596
+784 n_h_neurons, lea_rate  0.01, 10 it, r_seed 243219 , acc,  0.6646
+784 n_h_neurons, lea_rate  0.1, 2 it, r_seed 243219 , acc,  0.324

@@ -1,0 +1,28 @@
+
+
+EXERCISE 5: MULTILAYER PERCEPTRON 
+
+trying to load data/train.csv from pickle
+no pickle exists. parsing file data/train.csv
+loaded data/train.csv
+trying to load data/mnist_test.csv from pickle
+loaded data/mnist_test.csv
+learning from 5000 data points
+classifying 10000 data points
+cross-validating kernel with 20 groups
+
+
+MULTILAYER PERCEPTRON
+
+1. Training the classifier:
+The accuracy after cross-validation process: 0.5226
+Save classifier in pickle:
+
+2. Get predictions using the classifier:
+[['7']
+ ['6']
+ ['1']
+ ..., 
+ ['4']
+ ['8']
+ ['6']]

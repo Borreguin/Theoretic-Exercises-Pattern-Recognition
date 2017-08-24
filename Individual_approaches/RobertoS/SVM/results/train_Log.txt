@@ -1,0 +1,2 @@
+Document size: 3000,Size of each sample: 784
+Document size: 1500,Size of each sample: 784

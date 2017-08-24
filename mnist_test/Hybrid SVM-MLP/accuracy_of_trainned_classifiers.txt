@@ -1,0 +1,16 @@
+
+
+EXERCISE 5: HYBRID COMBINATION OF MLP AND SVM 
+
+This script takes three trained classifiers 
+
+trying to load data/stest.csv from pickle
+loaded data/stest.csv
+classifying 5000 data points
+
+1. Loading the classifier:
+
+2. Get predictions using the classifier:
+The accuracy classifier_1: 0.9972
+The accuracy classifier_2: 0.9862
+The accuracy classifier_3: 0.6058

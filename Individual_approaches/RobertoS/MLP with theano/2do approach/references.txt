@@ -1,0 +1,9 @@
+We adapted the code from:
+http://deeplearning.net/tutorial/mlp.html
+
+These python scripts use theano for making the model and the use of the descent gradient using symbolic expressions.
+
+scripts:
+-	Ex3.py 		contains our adaptation
+-	MLPLib.py	Contains the Multilayer Perceptrom Model using theano
+-	logistic_sgd	Definition of logistic_sgd classifier (looks similar to MLP)   

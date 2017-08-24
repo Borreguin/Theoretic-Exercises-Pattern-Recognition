@@ -1,0 +1,23 @@
+
+
+EXERCISE 5: SUPPORT VECTOR MACHINES
+
+trying to load data/strain.csv from pickle
+no pickle exists. parsing file data/strain.csv
+loaded data/strain.csv
+trying to load data/mnist_test.csv from pickle
+loaded data/mnist_test.csv
+learning from 1499 data points
+classifying 10000 data points
+cross-validating kernel with 8 groups
+
+1. Training the classifier:
+
+
+POLYNOMIAL KERNEL
+The accuracy after cross-validation process: 0.914594948231
+Save classifier in pickle:
+
+2. Get predictions using the classifier:
+['7' '2' '1' ..., '4' '5' '6']
+('test_polynomial_kernel processed in ', 26.288165807724)

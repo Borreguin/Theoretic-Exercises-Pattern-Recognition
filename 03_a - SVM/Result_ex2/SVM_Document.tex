@@ -1,0 +1,235 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{listings}
+%\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+
+
+
+\usepackage{listings}
+
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+%backgroundcolor=\color{gray97},
+%rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+%
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C}
+{language=C,
+}
+
+
+\usepackage{hyperref}
+
+
+
+
+
+\title{Exercise 2. Support Vector Machine - Python Implementation  \\ Pattern Recognition }	
+\author{Sanchez Roberto  \\ Roth Markus  \\  Nikodemski Alexandre \\ 
+\\Université de Fribourg}
+\newtheorem{theorem}{Theorem}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\maketitle 
+\section{Description}
+
+\textit{With this exercise we want to build the foundation for the Pattern Recognition Framework. To do this we should still work on the MNIST dataset, with which 
+we should be familiar by now. In this exercise we should aim to improve the recognition rate on the MNIST dataset using SVM.
+}\\
+
+The projects contains the following folders:
+
+\begin{itemize}
+	\item[1] \textbf{Data:} Contains the MNIST handwritten digit database.  
+	\item[2] \textbf{Individual approaches:} Contains the individual collaboration approach of each member in the work-group.
+	\item[3] \textbf{MLP with Theano:} The approach for MLP using the Theano library, this is an adaptation from: http://deeplearning.net/tutorial/mlp.html 
+	\item[4] \textbf{results\_ex2 and results\_ex3} The results for each exercise.
+	\item[5] \textbf{Transformation:} This a feature extraction method proposed for the group, in order to decrease the elalpsed time of the each recognition.  
+\end{itemize}
+
+The exercise 2 (SVM classifier) is executed by the script $ex2.py$. The dependent scripts are:  
+
+\begin{itemize}
+	\item[data\_point:]	Opens the MNIST dataset form data.
+	\item[classifiers:] Create a kernel configuration for the classifier in order to perform for the cross-validation training routine and the corresponding evaluation of the classifier.    
+\end{itemize}
+
+
+\section{Important Functions / Scripts}
+
+\subsection{Kernel construct and test kernel}
+
+Implements the framework necessary to perform the test of the SVM classifier according with the following parameters:   
+\begin{itemize}
+\item[-] C parameter, in range of [0, 10]  
+\item[-] Hyperplane Kernel function: Sigmoid, polynomial, Radial Basis and lineal.  
+\item[-] Decision function shapes: one-vs-the-rest (ovr), one-vs-one (ovo). 
+\item[-] Cache size   	
+\end{itemize}
+
+All those parameter are set up according to \url{http://scikit-learn.org/stable/modules/svm.html#svm-kernels}
+
+\subsection{Train classifier, test classifier}
+
+The training method uses the \textit{fit} function for each kernel configuration in order to perform the training. The test method uses the \textit{predict} function in order to measure the accuracy of the classifier  
+
+
+\subsection{Cross validation}
+
+Cross validate uses the index operator ":" in order to perform the k-folder cross validation where k is the number of groups that we want to split the training set.    
+
+\section{Methodology}
+
+\subsection{Cross validation and testing}
+
+The script performs the cross validation along the training set. Once the training is finish, we perform the \textit{test classifier} to observe the accuracy of the classifier according with the kernel that was used.  
+
+\subsection{Feature extraction}
+
+Since the use of the 28 x 28 gray scale vector takes so much time in order to perform the cross-validation and the validation with the test set, we use a proposed feature extraction script that reduce the length of the vector from 28 x 28 features to 28 x 2 features (this proposed method is described in the transformation folder). We proceeded the following manner:
+
+\begin{itemize}
+	\item Use a small part of the training set (i.e short\_training.csv) and small part of the test set (short\_testing.csv), we perform the training and the test validation.
+	\item The test validation gives us the 92,6 \% of accuracy, we proceeded in the same way for the new transformed feature vector, and we achieve the 86.3 \% of accuracy.
+	\item Because we observe a good performance over the transformed vector, and since in our opinion the accuracy is closed to the obtained precision. We decided transform the entire training and the test set (i.e. 1.2.Tr\_train.csv and  1.2.Tr\_test.csv) in order to decrease the elapsed time of each experiment.        
+\end{itemize}     
+
+
+\section{Results}
+
+The following table shows the results according each experiment:
+
+\subsection{Polynomial Kernel}
+
+Over the train (25000 digits) and test\_short data set (15000 digits):\\
+
+\begin{tabular}{l*{4}{c}r}
+	& Degree(1) & Degree(2) & Degree(4) \\
+\hline
+C = 0.1	&	89.509	& 	92.639	&	88.469 \\ 
+C = 1	&	89.509	&	92.639	&	88.469 \\
+C = 10  &	89.509	&	92.639	&	88.469 \\
+\end{tabular} \\
+
+Over the  1.2.Tr\_train (26999) and  1.2.Tr\_test data set (15001): \\
+
+\begin{tabular}{l*{4}{c}r}
+	& Degree(1) & Degree(2) & Degree(4) \\
+\hline
+C = 0.1	&	75.4	& 	84.4	&	82.7 \\ 
+C = 1	&	78.1	&	82.9	&	82.7 \\
+C = 10  &	78.8	&	82.3	&	82.7 \\
+\end{tabular} \\
+
+We achieve the best result using a kernel of second degree and C parameter equal to 0.1. Interesting to see is the fact that the accuracy doesn't change so much for the variations of the C parameter, instead the degree of the kernel function is important. The best result we achieve in the total data set is 84.4\%.      
+
+\subsection{Radial Basis Kernel}
+
+Over the train\_short (5000 digits) and test\_short data set (2000 digits):\\
+
+\begin{tabular}{l*{5}{c}r}
+	& $\gamma = 0.1$  & $\gamma = 10$   & $\gamma = 1000$  & $\gamma = 10000$  \\
+\hline
+C = 1		&	9.92	& 	9.92	&	9.92 	& 	9.92 \\ 
+C = 10		&	9.92	&	9.92	&	9.92 	&	9.92 \\
+C = 10000  	&	9.92	&	9.92	&	9.92 	&	9.92 \\
+\end{tabular} \\
+
+Over the  1.2.Tr\_train (26999) and  1.2.Tr\_test data set (15001): \\
+
+\begin{tabular}{l*{5}{c}r}
+	& $\gamma = 0.1$  & $\gamma = 10$   & $\gamma = 1000$  & $\gamma = 10000$  \\
+\hline
+C = 1		&	23.0	& 	10.99	&	10.98 	& 	10.98 \\ 
+C = 10		&	25.63	&	10.99	&	10.98 	&	10.98 \\
+C = 10000  	&	25.63	&	10.98	&	10.98 	&	10.98 \\
+\end{tabular} \\
+
+We achieve the best result using the c parameter equal to 10 and $\gamma$ equal to 0.1. Interesting to see is the fact that the accuracy doesn't change so much for the variations of $\gamma$ parameter. The best accuracy that we achieved is 25.63\%. Additional the more we training this model, the more accuracy we have. 
+
+We based our experiment according how the influence of the parameters $c$ and $\gamma$ affect the Radial Basis Kernel, this information is available in: \url{http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html#example-svm-plot-rbf-parameters-py}
+
+\subsection{Sigmoid Kernel}
+
+Over the  1.2.Tr\_train (26999) and  1.2.Tr\_test data set (15001): \\
+The parameter C, here does not change so much the accuracy, therefore in our experiments $C=1$, the $\gamma$ parameter and the independent coefficient $\rho$ change respectively:   
+
+\begin{tabular}{l*{4}{c}r}
+	& $\gamma = 1$ & $\gamma = 100$ & $\gamma = 10000$ \\
+\hline
+$\rho = -1000$	&	71.28	& 	82.69	&	82.752 \\ 
+$\rho = -10$	&	82.69	&	82.74	&	82.752 \\
+$\rho = 0$  	&	82.75	&	82.75	&	82.757 \\
+$\rho = 10$  	&	82.76	&	82.75	&	82.751 \\
+$\rho = 1000$  	&	83.44	&	82.76	&	82.748 \\
+\end{tabular} \\
+
+We achieve a good result when the independent coefficient $\rho$ is high and the $\gamma$ parameter is a small value, the best result was 83.44 \%.  
+
+\subsection{Lineal Kernel}
+
+Over the  1.2.Tr\_train (26999) and  1.2.Tr\_test data set (15001):
+
+We configure the C parameter as follows:
+
+\begin{tabular}{l*{2}{c}r}
+	& Accuracy   \\
+\hline
+$C = 1$	&	77.6	 \\ 
+$C = 100$	&	76.7 \\
+$C = 10000$	&	--- \\
+\end{tabular} \\
+
+For values of C greater than 100, the calculation takes so much time. but we can observe that for small values of C, we get an accuracy of 77.6%.
+
+\newpage
+
+\section{Conclusions}
+
+\begin{itemize}
+	\item We achieve 93\% of accuracy in the best case with the complete 28x28 vector feature using a polynomial kernel with degree 2 and $C=1$.
+
+	\item We observe that we achieve better results with a polynomial kernel. In our approach we test the polynomial kernel using the 28x28 vector feature, but due the fact that was so long, we extract two features by each row therefore we had a 2x28 feauture vector. We decrease considerably the elapsed time but the best accuracy was 84.4\%. We conclude that this kernel can improve considerably if we use the complete 28x28 vector feature (i.e. 93\%). 
+
+	\item From the experience of this experiment we observe the Radial Basis Kernel does not have good results, it could improve for big values of c and small values of $\gamma$, we achieve the best result of 25.63 \% of accuracy.   
+\end{itemize}	  
+	      
+
+\end{document}
+

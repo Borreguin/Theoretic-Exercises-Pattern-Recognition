@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{listings}
+%\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+\usepackage{hyperref}
+
+\title{Series 2a. Mean - Variance Feature - extraction  \\ Pattern Recognition }	
+\author{Roberto Sanchez \\ Univesité de Fribourg}
+\newtheorem{theorem}{Theorem}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\maketitle 
+\section{Description}
+
+\subsection{A proposed feature extraction} 
+
+The script \textbf{1.2.Transf.py} reduces the size feature vector from 28 x 28 values to 28 x 2 values. The original vector is split in 28 subsets i.e. $C_{n=[1...28]} \subseteq V^{28x28} $  where the colors values (0-255 gray scale) are not important anymore, but instead we take in count the position where each pixel has a value greater than a parameter called opacity. We define this transformation as: $X_{i} \in V^{28x28} ; \mu_{n} \in M^{28} ; \varrho_{n} \in G^{28} $, where $x_{i}$ is each feature in the vector of 28 x 28, $\mu_{n}$ is the mean position of a subset of 28 pixels and the $\varrho_{n}$ is the difference between the mean value and the variance in each subset of 28 pixels, therefore we have the equations (1) and (2) : 
+   
+\begin{equation}
+\displaystyle  \mu_{n} = \frac{1}{N}\sum_{i=0}^{28} X_{i|v > opacity}
+\end{equation} 
+ 
+
+In the equation, $X_{i}$ is the gray scale feature (0-255) for each subset pixel representation, N is number of pixels that have values whose the gray scale value is greater than \textit{opacity} parameter, $\sigma$ is the variance of each subset $C_{n} \subseteq V$:  \\
+
+\begin{equation}
+\displaystyle  \sigma_{n} = \frac{1}{N}\left[ \sum_{i=0}^{28} (X_{i|v > opacity} - \mu)^2 \right] ^{1/2}
+\end{equation}
+
+Finally the transformation is the vector $Y$ defined as: $f(X_{i \in C}) \rightarrow^{T} Y_{n}=(\mu_{n},\varrho_{n})$ for each subset $C \in V$. The script returns the following structure (n: is number of 28 formed groups, therefore $n = [0... 27])$:
+
+\begin{itemize}
+	\item[x[0]]: Contains the digit handwriting data label.   	
+	\item[x[2n+1]]: Contains the mean position of the pixels inside of the group n.
+	\item[x[2n+2]]: Contains the difference of the mean position and the variance: $\varrho = \mu - \sigma $ 
+\end{itemize}
+
+
+
+\end{document}
+

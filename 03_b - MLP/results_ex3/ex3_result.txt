@@ -1,0 +1,200 @@
+
+
+EXERCISE 3: MULTILAYER PERCEPTRON 
+
+trying to load data/1.2.Tr_train_short.csv from pickle
+loaded data/1.2.Tr_train_short.csv
+trying to load data/1.2.Tr_test_short.csv from pickle
+loaded data/1.2.Tr_test_short.csv
+learning from 5000 data points
+classifying 2000 data points
+cross-validating kernel with 10 groups
+
+
+MULTILAYER PERCEPTRON
+
+cross-validating...
+10 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 243219 gives accuracy 0.6952
+10 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 4353 gives accuracy 0.7162
+10 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 342432 gives accuracy 0.706
+10 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 32432 gives accuracy 0.7196
+10 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 432 gives accuracy 0.7196
+10 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 243219 gives accuracy 0.7156
+10 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 4353 gives accuracy 0.7286
+10 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 342432 gives accuracy 0.703
+10 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 32432 gives accuracy 0.7208
+10 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 432 gives accuracy 0.711
+10 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 243219 gives accuracy 0.7156
+10 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 4353 gives accuracy 0.7286
+10 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 342432 gives accuracy 0.703
+10 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 32432 gives accuracy 0.7208
+10 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 432 gives accuracy 0.711
+10 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 243219 gives accuracy 0.3322
+10 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 4353 gives accuracy 0.3472
+10 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 342432 gives accuracy 0.3864
+10 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 32432 gives accuracy 0.3756
+10 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 432 gives accuracy 0.341
+10 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 243219 gives accuracy 0.3322
+10 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 4353 gives accuracy 0.3472
+10 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 342432 gives accuracy 0.3864
+10 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 32432 gives accuracy 0.3756
+10 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 432 gives accuracy 0.341
+10 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 243219 gives accuracy 0.3322
+10 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 4353 gives accuracy 0.3472
+10 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 342432 gives accuracy 0.3864
+10 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 32432 gives accuracy 0.3756
+10 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 432 gives accuracy 0.341
+10 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 243219 gives accuracy 0.0964
+10 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 4353 gives accuracy 0.0992
+10 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 342432 gives accuracy 0.0986
+10 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 32432 gives accuracy 0.1104
+10 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 432 gives accuracy 0.0874
+10 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 243219 gives accuracy 0.0972
+10 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 4353 gives accuracy 0.105
+10 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 342432 gives accuracy 0.1078
+10 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 32432 gives accuracy 0.1082
+10 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 432 gives accuracy 0.0948
+10 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 243219 gives accuracy 0.0936
+10 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 4353 gives accuracy 0.105
+10 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 342432 gives accuracy 0.1078
+10 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 32432 gives accuracy 0.1082
+10 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 432 gives accuracy 0.0948
+30 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 243219 gives accuracy 0.738
+30 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 4353 gives accuracy 0.7608
+30 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 342432 gives accuracy 0.7336
+30 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 32432 gives accuracy 0.7492
+30 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 432 gives accuracy 0.7484
+30 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 243219 gives accuracy 0.7534
+30 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 4353 gives accuracy 0.7582
+30 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 342432 gives accuracy 0.7518
+30 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 32432 gives accuracy 0.7484
+30 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 432 gives accuracy 0.7482
+30 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 243219 gives accuracy 0.7534
+30 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 4353 gives accuracy 0.7582
+30 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 342432 gives accuracy 0.7518
+30 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 32432 gives accuracy 0.7484
+30 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 432 gives accuracy 0.7482
+30 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 243219 gives accuracy 0.3948
+30 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 4353 gives accuracy 0.414
+30 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 342432 gives accuracy 0.4062
+30 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 32432 gives accuracy 0.3862
+30 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 432 gives accuracy 0.4124
+30 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 243219 gives accuracy 0.3948
+30 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 4353 gives accuracy 0.414
+30 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 342432 gives accuracy 0.4062
+30 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 32432 gives accuracy 0.3862
+30 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 432 gives accuracy 0.4124
+30 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 243219 gives accuracy 0.3948
+30 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 4353 gives accuracy 0.414
+30 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 342432 gives accuracy 0.4062
+30 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 32432 gives accuracy 0.3862
+30 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 432 gives accuracy 0.4124
+30 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 243219 gives accuracy 0.1032
+30 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 4353 gives accuracy 0.1016
+30 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 342432 gives accuracy 0.1036
+30 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 32432 gives accuracy 0.1094
+30 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 432 gives accuracy 0.106
+30 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 243219 gives accuracy 0.1032
+30 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 4353 gives accuracy 0.1032
+30 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 342432 gives accuracy 0.1022
+30 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 32432 gives accuracy 0.1036
+30 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 432 gives accuracy 0.1036
+30 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 243219 gives accuracy 0.1032
+30 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 4353 gives accuracy 0.1032
+30 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 342432 gives accuracy 0.1022
+30 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 32432 gives accuracy 0.1036
+30 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 432 gives accuracy 0.1036
+50 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 243219 gives accuracy 0.7382
+50 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 4353 gives accuracy 0.7548
+50 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 342432 gives accuracy 0.7616
+50 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 32432 gives accuracy 0.7488
+50 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 432 gives accuracy 0.7542
+50 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 243219 gives accuracy 0.761
+50 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 4353 gives accuracy 0.7626
+50 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 342432 gives accuracy 0.7588
+50 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 32432 gives accuracy 0.755
+50 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 432 gives accuracy 0.7534
+50 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 243219 gives accuracy 0.761
+50 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 4353 gives accuracy 0.7626
+50 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 342432 gives accuracy 0.7588
+50 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 32432 gives accuracy 0.7558
+50 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 432 gives accuracy 0.7534
+50 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 243219 gives accuracy 0.3612
+50 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 4353 gives accuracy 0.443
+50 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 342432 gives accuracy 0.455
+50 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 32432 gives accuracy 0.418
+50 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 432 gives accuracy 0.4284
+50 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 243219 gives accuracy 0.3612
+50 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 4353 gives accuracy 0.443
+50 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 342432 gives accuracy 0.455
+50 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 32432 gives accuracy 0.418
+50 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 432 gives accuracy 0.4284
+50 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 243219 gives accuracy 0.3612
+50 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 4353 gives accuracy 0.443
+50 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 342432 gives accuracy 0.455
+50 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 32432 gives accuracy 0.418
+50 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 432 gives accuracy 0.4284
+50 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 243219 gives accuracy 0.1086
+50 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 4353 gives accuracy 0.1078
+50 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 342432 gives accuracy 0.101
+50 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 32432 gives accuracy 0.098
+50 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 432 gives accuracy 0.1048
+50 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 243219 gives accuracy 0.1086
+50 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 4353 gives accuracy 0.1078
+50 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 342432 gives accuracy 0.101
+50 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 32432 gives accuracy 0.098
+50 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 432 gives accuracy 0.0978
+50 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 243219 gives accuracy 0.1086
+50 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 4353 gives accuracy 0.1078
+50 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 342432 gives accuracy 0.101
+50 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 32432 gives accuracy 0.098
+50 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 432 gives accuracy 0.0978
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 243219 gives accuracy 0.772
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 4353 gives accuracy 0.7616
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 342432 gives accuracy 0.7536
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 32432 gives accuracy 0.7478
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 432 gives accuracy 0.7638
+100 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 243219 gives accuracy 0.7696
+100 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 4353 gives accuracy 0.7554
+100 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 342432 gives accuracy 0.7628
+100 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 32432 gives accuracy 0.7492
+100 neurons in hidden layer, learning rate 0.01, 40 iterations and random seed 432 gives accuracy 0.7648
+100 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 243219 gives accuracy 0.7626
+100 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 4353 gives accuracy 0.7616
+100 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 342432 gives accuracy 0.7606
+100 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 32432 gives accuracy 0.7492
+100 neurons in hidden layer, learning rate 0.01, 100 iterations and random seed 432 gives accuracy 0.7652
+100 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 243219 gives accuracy 0.418
+100 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 4353 gives accuracy 0.4394
+100 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 342432 gives accuracy 0.4088
+100 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 32432 gives accuracy 0.4504
+100 neurons in hidden layer, learning rate 0.1, 10 iterations and random seed 432 gives accuracy 0.41
+100 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 243219 gives accuracy 0.418
+100 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 4353 gives accuracy 0.4394
+100 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 342432 gives accuracy 0.4088
+100 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 32432 gives accuracy 0.4504
+100 neurons in hidden layer, learning rate 0.1, 40 iterations and random seed 432 gives accuracy 0.41
+100 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 243219 gives accuracy 0.418
+100 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 4353 gives accuracy 0.4394
+100 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 342432 gives accuracy 0.4088
+100 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 32432 gives accuracy 0.4504
+100 neurons in hidden layer, learning rate 0.1, 100 iterations and random seed 432 gives accuracy 0.41
+100 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 243219 gives accuracy 0.1014
+100 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 4353 gives accuracy 0.1036
+100 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 342432 gives accuracy 0.108
+100 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 32432 gives accuracy 0.098
+100 neurons in hidden layer, learning rate 0.5, 10 iterations and random seed 432 gives accuracy 0.101
+100 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 243219 gives accuracy 0.1014
+100 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 4353 gives accuracy 0.1036
+100 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 342432 gives accuracy 0.108
+100 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 32432 gives accuracy 0.098
+100 neurons in hidden layer, learning rate 0.5, 40 iterations and random seed 432 gives accuracy 0.101
+100 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 243219 gives accuracy 0.1014
+100 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 4353 gives accuracy 0.1036
+100 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 342432 gives accuracy 0.108
+100 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 32432 gives accuracy 0.098
+100 neurons in hidden layer, learning rate 0.5, 100 iterations and random seed 432 gives accuracy 0.101
+
+best result:
+100 neurons in hidden layer, learning rate 0.01, 10 iterations and random seed 243219 gives accuracy 0.772
+best parameters applied to test set give accuracy of 0.755
